@@ -1,0 +1,40 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body { background-color: #f4f4f9; color: #333; line-height: 1.6; padding-bottom: 50px; }
+
+header { background: #fff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+nav a { text-decoration: none; color: #007bff; margin-left: 15px; font-weight: bold; }
+
+.container { max-width: 1000px; margin: 20px auto; padding: 0 15px; }
+
+section { background: #fff; padding: 30px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+
+h2 { color: #2c3e50; margin-bottom: 20px; border-left: 5px solid #007bff; padding-left: 15px; font-size: 1.5rem; }
+
+
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.skill-card { background: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #eee; text-align: left; }
+.skill-card .icon { font-size: 1.5rem; color: #007bff; margin-bottom: 10px; }
+.progress-bar { background: #ddd; height: 8px; border-radius: 4px; margin-top: 10px; overflow: hidden; }
+.progress { background: #007bff; height: 100%; border-radius: 4px; transition: width 1s ease-in-out; }
+
+/* проекты */
+.projects-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.project-card { padding: 20px; border: 1px solid #eee; border-radius: 10px; background: #fafafa; }
+.project-card.featured { border: 2px solid #007bff; background: #f0f7ff; }
+
+/* контакты */
+.contacts-flex { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; padding: 10px 0; }
+.btn { text-decoration: none; padding: 12px 25px; border-radius: 8px; color: #fff; font-weight: bold; display: flex; align-items: center; gap: 10px; min-width: 160px; justify-content: center; }
+.github { background: #24292e; }
+.telegram { background: #0088cc; }
+.btn.email {
+    background: #ea4335; /* Красный цвет в стиле Google/Gmail */
+}
+
+/* ава */
+.hero-section { text-align: center; }
+.avatar { width: 160px; height: 160px; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 15px; }
+.goal-box { margin-top: 15px; background: #f0f4f8; padding: 10px; border-radius: 8px; display: inline-block; }
+
+footer { text-align: center; padding: 30px; color: #888; border-top: 1px solid #eee; }
